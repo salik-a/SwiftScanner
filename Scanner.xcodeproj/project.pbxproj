@@ -14,6 +14,9 @@
 		7B3E7B5027AAB77200292915 /* ScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3E7B4F27AAB77200292915 /* ScannerTests.swift */; };
 		7B3E7B5A27AAB77200292915 /* ScannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3E7B5927AAB77200292915 /* ScannerUITests.swift */; };
 		7B3E7B5C27AAB77200292915 /* ScannerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3E7B5B27AAB77200292915 /* ScannerUITestsLaunchTests.swift */; };
+		7B3E7B6927AAB85A00292915 /* ScanData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3E7B6827AAB85A00292915 /* ScanData.swift */; };
+		7B3E7B6B27AABB1100292915 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3E7B6A27AABB1100292915 /* ScannerView.swift */; };
+		7B3E7B6D27AABCC200292915 /* TextRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3E7B6C27AABCC200292915 /* TextRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		7B3E7B5527AAB77200292915 /* ScannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B3E7B5927AAB77200292915 /* ScannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerUITests.swift; sourceTree = "<group>"; };
 		7B3E7B5B27AAB77200292915 /* ScannerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7B3E7B6827AAB85A00292915 /* ScanData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanData.swift; sourceTree = "<group>"; };
+		7B3E7B6A27AABB1100292915 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		7B3E7B6C27AABCC200292915 /* TextRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecognizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +101,12 @@
 			isa = PBXGroup;
 			children = (
 				7B3E7B3E27AAB77000292915 /* ScannerApp.swift */,
+				7B3E7B6A27AABB1100292915 /* ScannerView.swift */,
 				7B3E7B4027AAB77000292915 /* ContentView.swift */,
 				7B3E7B4227AAB77200292915 /* Assets.xcassets */,
 				7B3E7B4427AAB77200292915 /* Preview Content */,
+				7B3E7B6827AAB85A00292915 /* ScanData.swift */,
+				7B3E7B6C27AABCC200292915 /* TextRecognizer.swift */,
 			);
 			path = Scanner;
 			sourceTree = "<group>";
@@ -258,7 +267,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B3E7B4127AAB77000292915 /* ContentView.swift in Sources */,
+				7B3E7B6B27AABB1100292915 /* ScannerView.swift in Sources */,
+				7B3E7B6D27AABCC200292915 /* TextRecognizer.swift in Sources */,
 				7B3E7B3F27AAB77000292915 /* ScannerApp.swift in Sources */,
+				7B3E7B6927AAB85A00292915 /* ScanData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,11 +434,13 @@
 				DEVELOPMENT_TEAM = SBHDRK8J4B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) requires permissions to scan files";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,11 +465,13 @@
 				DEVELOPMENT_TEAM = SBHDRK8J4B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) requires permissions to scan files";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
